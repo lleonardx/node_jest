@@ -22,4 +22,17 @@ describe('Users Controller', () => {
         expect(mockResponse.state.status).toBe(201);
         expect(mockResponse.state.json).toMatchObject({'mensagem': `Usuário Leonardo criado.`})
     })
+
+    it('Não criar Usuário em branco', () => {
+        mockRequest.body = {
+            name: ''
+        }
+        usersController.criarUsuario(mockRequest, mockResponse);
+        expect(mockResponse.state.status).toBe(403);
+        expect(mockResponse.state.json).toMatchObject({mensagem: 'Não é possível criar usuário sem nome!'})
+
+
+    })   
+
+
 })
