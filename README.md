@@ -1,6 +1,6 @@
 # Node_Jest
 
-Projeto inicial de uma API básica de cadastro e listagem de usuário, utilizando a inicialmente Javascript, depois refatorando para Typescript. Utilizando:
+Projeto inicial de uma API básica de cadastro e listagem de usuário, salvando os dados em um array, utilizando a inicialmente Javascript, depois refatorando para Typescript. Utilizando:
 
-- Express - para criação das rotas
+- Express - criação das rotas da API
 - Jest - criação dos testes unitários
